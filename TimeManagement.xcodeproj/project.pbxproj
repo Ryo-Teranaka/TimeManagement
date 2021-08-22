@@ -13,9 +13,11 @@
 		2A5F4C6F26AAC4C2005B278C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A5F4C6D26AAC4C2005B278C /* Main.storyboard */; };
 		2A5F4C7126AAC4C4005B278C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A5F4C7026AAC4C4005B278C /* Assets.xcassets */; };
 		2A5F4C7426AAC4C4005B278C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A5F4C7226AAC4C4005B278C /* LaunchScreen.storyboard */; };
+		EB03CAAD69641905B323445F /* Pods_TimeManagement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF7F3AF22225FE9D993D1AC6 /* Pods_TimeManagement.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		26783EF6CD08FD3E850E38A5 /* Pods-TimeManagement.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TimeManagement.release.xcconfig"; path = "Target Support Files/Pods-TimeManagement/Pods-TimeManagement.release.xcconfig"; sourceTree = "<group>"; };
 		2A5F4C6426AAC4C2005B278C /* TimeManagement.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimeManagement.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A5F4C6726AAC4C2005B278C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2A5F4C6926AAC4C2005B278C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +26,8 @@
 		2A5F4C7026AAC4C4005B278C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2A5F4C7326AAC4C4005B278C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2A5F4C7526AAC4C5005B278C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9EC77007D405AD99CC7D3690 /* Pods-TimeManagement.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TimeManagement.debug.xcconfig"; path = "Target Support Files/Pods-TimeManagement/Pods-TimeManagement.debug.xcconfig"; sourceTree = "<group>"; };
+		DF7F3AF22225FE9D993D1AC6 /* Pods_TimeManagement.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TimeManagement.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB03CAAD69641905B323445F /* Pods_TimeManagement.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +47,8 @@
 			children = (
 				2A5F4C6626AAC4C2005B278C /* TimeManagement */,
 				2A5F4C6526AAC4C2005B278C /* Products */,
+				3A4AF9990AD5EAB58FC677D4 /* Pods */,
+				402A6A52537A4ECB6E7E3778 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +74,24 @@
 			path = TimeManagement;
 			sourceTree = "<group>";
 		};
+		3A4AF9990AD5EAB58FC677D4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9EC77007D405AD99CC7D3690 /* Pods-TimeManagement.debug.xcconfig */,
+				26783EF6CD08FD3E850E38A5 /* Pods-TimeManagement.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		402A6A52537A4ECB6E7E3778 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DF7F3AF22225FE9D993D1AC6 /* Pods_TimeManagement.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2A5F4C7826AAC4C5005B278C /* Build configuration list for PBXNativeTarget "TimeManagement" */;
 			buildPhases = (
+				EE14D0493A6B109FE51ED603 /* [CP] Check Pods Manifest.lock */,
 				2A5F4C6026AAC4C2005B278C /* Sources */,
 				2A5F4C6126AAC4C2005B278C /* Frameworks */,
 				2A5F4C6226AAC4C2005B278C /* Resources */,
+				F4A5F106502CFA5D166ACD2F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -131,6 +158,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		EE14D0493A6B109FE51ED603 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TimeManagement-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F4A5F106502CFA5D166ACD2F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TimeManagement/Pods-TimeManagement-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TimeManagement/Pods-TimeManagement-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TimeManagement/Pods-TimeManagement-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2A5F4C6026AAC4C2005B278C /* Sources */ = {
@@ -283,6 +352,7 @@
 		};
 		2A5F4C7926AAC4C5005B278C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9EC77007D405AD99CC7D3690 /* Pods-TimeManagement.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -301,6 +371,7 @@
 		};
 		2A5F4C7A26AAC4C5005B278C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 26783EF6CD08FD3E850E38A5 /* Pods-TimeManagement.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
